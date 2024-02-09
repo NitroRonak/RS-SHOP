@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.myOrdersPage {
+  background-color: rgb(13, 13, 39);
+  padding: 0 7vmax;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+#myOrdersHeading {
+  text-align: center;
+  padding: 0.5vmax;
+  background-color: black;
+  color: rgb(72, 233, 235);
+  font-weight: bold;
+  border-radius: 20px 20px 0px 0px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3vmax;
+}
+.myOrdersTable {
+  background-color: rgb(252, 252, 248);
+}
+.myOrdersTable div {
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: 1vmax;
+  border: none;
+}
+.myOrdersTable a {
+  transition: all 0.5s;
+}
+.myOrdersTable a:hover {
+  color: rgb(173, 3, 3);
+}
+.MuiDataGrid-columnHeader {
+  background-color: rgb(223, 217, 130);
+  padding: 1vmax !important;
+  color: rgb(38, 8, 52);
+}
+.MuiDataGrid-columnHeader div {
+  color: rgb(27, 5, 5);
+  font: 500 1.1vmax "Lobster" !important;
+}
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+@media screen and (max-width: 600px) {
+  .myOrdersPage {
+    padding: 0;
+    height: 93vh;
+  }
+
+  #myOrdersHeading {
+    font: 400 2.2vmax "Bebas Neue";
+    padding: 4vw;
+  }
+
+  .MuiDataGrid-columnHeader {
+    background-color: rgb(223, 217, 130);
+    padding: 1vmax !important;
+    color: rgb(38, 8, 52);
+    font-size: 1vmax; /* Set font size for column headers */
+  }
+
+  .MuiDataGrid-colCell {
+    min-width: 80px; /* Adjust column widths for mobile view */
+  }
+  .MuiDataGrid-iconSeparator {
+    display: none !important;
+  }
+  .MuiDataGrid-colCellWrapper {
+    white-space: nowrap; /* Allow text wrapping in cells for mobile view */
+  }
+
+  .MuiDataGrid-root {
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  }
+}

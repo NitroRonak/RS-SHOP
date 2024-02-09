@@ -1,0 +1,235 @@
+.confirmOrderPage {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    color: whitesmoke;
+}
+
+.confirmOrderPage>div:last-child {
+    border-left: 1px solid rgba(65, 239, 255, 0.247);
+}
+
+.confirmshippingArea {
+    padding: 5vmax;
+    padding-bottom: 0%;
+}
+
+.confirmshippingArea>p {
+    font-weight: 400;
+    font-size: 1.8vmax;
+    font-family: "Lobster", cursive;
+    color: chartreuse;
+}
+
+.confirmshippingAreaBox,
+.confirmCartItemsContainer {
+    margin: 2vmax;
+}
+
+.confirmshippingAreaBox>div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.confirmshippingAreaBox>div>p {
+    font-weight: 400;
+    font-size: 1.3vmax;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(110, 255, 243)
+}
+
+.confirmshippingAreaBox>div>span {
+    font-weight: 400;
+    font-size: 1.3vmax;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 1vmax;
+    color: coral;
+}
+
+.confirmCartItems>p {
+    font-weight: 400;
+    font-size: 1.8vmax;
+    font-family: "Lobster", cursive;
+    color: chartreuse;
+}
+
+.confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.confirmCartItemsContainer {
+    max-height: 20vmax;
+    overflow-y: auto;
+}
+
+.confirmCartItemsContainer>div {
+    display: flex;
+    font-weight: 400;
+    font-size: 1.3vmax;
+    font-family: 'Bebas Neue', cursive;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.confirmCartItemsContainer>div>img {
+    width: 5vmax;
+}
+
+.confirmCartItemsContainer>div>a {
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    color: azure;
+    text-align: center;
+}
+
+.confirmCartItemsContainer>div>span {
+    color: cornsilk;
+}
+
+.orderSummary {
+    padding: 7vmax;
+}
+
+.orderSummary>p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8vmax;
+    font-family: "Lobster", cursive;
+    color: chartreuse;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.orderSummary > div > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.orderSummary > div > div > span{
+    font-weight: 400;
+    font-size: 1.3vmax;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 1vmax;
+    color: coral;
+}
+
+.orderSummary > div > div > p{
+    font-weight: 400;
+    font-size: 1.3vmax;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(110, 255, 243)
+}
+
+.orderSummaryTotal{
+    display: flex;
+    font-weight: 400;
+    font-size: 1.5vmax;
+    font-family: 'Rubik', sans-serif;
+    justify-content: space-between;
+    border-top: 1px solid rgba(203, 255, 106, 0.363);
+    padding: 2vmax 0;
+    color: rgb(180, 222, 29);
+}
+
+.orderSummary > button{
+background-color: rgb(240, 240, 240);
+  color: rgb(23, 4, 34);
+  width: 100%;
+  padding: 1vmax;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 20px;
+  font-family: 'Gluten', cursive;
+  font-size: 1.5vmax;
+  font-weight: bold;
+  animation: btnAnim 0.8s infinite forwards;
+}
+@keyframes btnAnim{
+    0%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(-5%);
+    }
+}
+
+.orderSummary > button:hover{
+    background-color: rgba(0, 0, 0, 0.247);
+    color: whitesmoke;
+    animation: none;
+    box-shadow: 0px 0px 25px 5px rgba(242, 145, 42, 0.247);
+    backdrop-filter: blur(25px);
+}
+
+@media screen and (max-width:600px){
+    .confirmOrderPage{
+        grid-template-columns: 1fr;
+        height: unset;
+    }
+    .confirmOrderPage > div:last-child{
+        border-left: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.247);
+    }
+    .confirmshippingArea > p{
+        font-size: 6vw;
+    }
+    .confirmshippingAreaBox > div{
+        display: flex;
+        margin: 6vw 0;
+    }
+    .confirmshippingAreaBox > div > p{
+        font-size: 4vw;
+    }
+    .confirmshippingAreaBox > div > span{
+        font-size: 4vw;
+    }
+    .confirmCartItems > p{
+        font-size: 5vw;
+    }
+    .confirmCartItemsContainer{
+        max-height: 50vw;
+    }
+    .confirmCartItemsContainer > div{
+        margin: 4vw 0;
+    }
+    .confirmCartItemsContainer>div>a{
+        text-align: center;
+        width: 30%;
+    }
+    .confirmCartItemsContainer > div >img{
+        width: 10vw;
+    }
+    .orderSummary{
+        padding: 12vw;
+    }
+    .orderSummary > p{
+        font-size: 5vw;
+    }
+    .orderSummary > div > div{
+        font-size: 4vw;
+
+    }
+    .orderSummaryTotal{
+        font-size: 4vw;
+        padding: 5vw 0;
+    }
+    .orderSummary > button{
+        padding: 4vw;
+        margin: 4vw auto;
+        font-size: 4vw;
+    }
+    .confirmOrderPage>div:last-child{
+        border-top: 1px solid rgba(255, 239, 65, 0.247);
+    }
+}

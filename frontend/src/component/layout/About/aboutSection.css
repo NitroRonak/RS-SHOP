@@ -1,0 +1,130 @@
+.aboutSection {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(90, 3, 98);
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+
+}
+
+.aboutSectionGradient {
+    background-image: linear-gradient(to bottom right,
+            rgb(171, 255, 114),
+            rgb(44, 225, 77));
+}
+
+.aboutSectionContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(31, 21, 63);
+    width: 80vw;
+    border-radius: 10px 10px 20px 20px ;
+    height: 80vh;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.456);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutSectionContainer>h1 {
+    font: 400 3vmax "Lobster";
+    color: rgb(255, 255, 255);
+    margin: 2vmax;
+}
+
+.aboutSectionContainer>div {
+    display: flex;
+    width: 100%;
+}
+
+.aboutSectionContainer>div>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vmax;
+    box-sizing: border-box;
+}
+
+.aboutSectionContainer>div>div>p {
+    color: rgb(242, 255, 123);
+    font: 100 1vmax "Roboto";
+    font-weight: bold;
+}
+
+.aboutSectionContainer>div>div>button {
+    margin: 1vmax 0;
+    color: lightblue;
+}
+
+.aboutSectionContainer>div>div>span {
+    font: 100 1vmax "Roboto";
+    color: rgba(255, 239, 239, 0.616);
+    text-align: center;
+    width: 80%;
+}
+
+.aboutSectionContainer2 {
+    border-left: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.aboutSectionContainer2>h2 {
+    color: whitesmoke;
+    font: 100 2.5vmax "Aboreto";
+    margin: 2vmax;
+}
+
+.aboutSectionContainer2>a>svg {
+    font-size: 4vmax;
+}
+
+.youtubeSvgIcon {
+    color: tomato;
+}
+
+.instagramSvgIcon {
+    color: rgb(144, 81, 202);
+}
+.instagramSvgIcon:hover{
+    transform: scale(1.5);
+    color: whitesmoke;
+    margin: 2vmax;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutSectionContainer>div {
+        display: block;
+    }
+
+    .aboutSectionContainer>h1 {
+        font: 400 5vmax "Roboto";
+        margin: 3vmax;
+    }
+
+    .aboutSectionContainer>div>div>p {
+        font: 100 2vmax "Roboto";
+    }
+
+    .aboutSectionContainer>div>div>span {
+        font: 100 1.4vmax "Roboto";
+        width: 70%;
+    }
+
+    .aboutSectionContainer2 {
+        border-left: none;
+    }
+
+    .aboutSectionContainer2>h2 {
+        font: 100 3vmax "Roboto";
+        margin: 2vmax;
+    }
+
+    .aboutSectionContainer2>a>svg {
+        font-size: 6vmax;
+        margin: 1vmax;
+    }
+}

@@ -1,0 +1,88 @@
+.productReviewsContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color:  rgb(223, 223, 223);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    height: 100vh;
+}
+
+.productReviewsForm {
+    width: 30rem;
+    display: flex;
+    border: 0;
+    border-radius: 10px 10px 20px 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    background-color: rgb(27, 9, 41);
+    box-shadow: 0px 0px 75px 5px rgba(0, 0, 0, 0.600);
+    margin-top: 8vmax;
+}
+
+.productReviewsFormHeading {
+    color: whitesmoke;
+    font-family: "Aboreto";
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.productReviewsFormHeading2{
+    color: black;
+    font-family: "Aboreto";
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vmax;
+}
+.productReviewsForm>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 2rem;
+}
+
+.productReviewsForm>div>input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 1.5vmax cursive;
+    outline: none;
+}
+
+.createProductBtn{
+    cursor: pointer;
+}
+
+.productReviewsForm>div>svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+@media screen and (max-width: 600px) {
+    .productReviewsContainer {
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.158);
+    }
+    .productReviewsForm{
+        width: 20rem;
+    }
+    .productReviewsFormHeading{
+        font-size: 1.5rem;
+    }
+
+    .productReviewsForm>div>input {
+        padding: 2.5vmax 5vmax;
+        font: 300 1.7vmax cursive;
+    }
+
+    .productReviewsForm>div>svg {
+        font-size: 2.8vmax;
+    }
+}

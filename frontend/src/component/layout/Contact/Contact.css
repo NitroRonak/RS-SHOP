@@ -1,0 +1,72 @@
+.contactContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 23, 36);
+  }
+  .contactBox{
+    width: 50rem;
+    height: 15vmax;
+    margin: 2vmax auto;
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0;
+    border-radius: 25px 0px 10px 0px;
+    animation: bottom-to-top 3s forwards;
+    align-items: center;
+  }
+  .contactContainer>img{
+    width: 20vmax;
+    color: chartreuse;
+    height: 15vmax;
+  }
+  .contactBox>h1{
+    color: whitesmoke;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1vmax;
+    transform: translateX(-100vw);
+    animation: mailBtnAnimation 2s forwards;
+  }
+  .contactBox>p{
+    color: rgb(41, 19, 41);
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .mailBtn {
+    text-decoration: none;
+    transform: translateX(-100vw);
+    animation: mailBtnAnimation 2s forwards;
+  }
+  
+  .mailBtn > button {
+    text-decoration: none;
+    font: bold 3vmax "Rubik";
+    color: tomato;
+    cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+    padding: 2vmax;
+  }
+  
+  @keyframes mailBtnAnimation {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (max-width:800px){
+    .contactBox{
+        width: 20rem;
+        height: 25vmax;
+    }
+    .contactBox>h1{
+        font-size: 1.6rem;
+        margin-top: 2vmax;
+    }
+    .contactBox>p{
+        font-size: 1.2rem;
+    }
+  }

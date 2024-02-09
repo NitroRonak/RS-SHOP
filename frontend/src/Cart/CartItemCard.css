@@ -1,0 +1,57 @@
+.CartItemCard{
+  display: flex;
+  padding: 1vmax;
+  height: 8vmax;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.CartItemCard > img{
+  width: 8vmax;
+}
+.CartItemCard > div{
+  display: flex;
+  margin: 0.3vmax 1vmax;
+  flex-direction: column;
+}
+.CartItemCard > div > a{
+  font-size: 1.5vmax;
+  font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
+  color: rgb(247, 255, 238);
+  font-weight: 400;
+}
+.CartItemCard > div > span{
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: 'Aboreto', cursive;
+  color: rgb(106, 115, 242);
+}
+.CartItemCard > div > p{
+  font-size: 1vmax;
+  font-weight: 300;
+  font-family: 'Aboreto', cursive;
+  color: coral;
+  margin-top: 0.5vmax;
+  cursor: pointer;
+}
+@media screen and (max-width:600px){
+  .CartItemCard{
+    padding: 3vmax;
+    height: 25vmax;
+  }
+  .CartItemCard > img{
+    width: 10vmax;
+  }
+  .CartItemCard > div{
+    margin: 1vmax 2vmax;
+  }
+  .CartItemCard > div > a{
+    font-size: 2vmax;
+  }
+  .CartItemCard > div > span{
+    font-size: 1.9vmax;
+  }
+  .CartItemCard > div > p{
+    font-size: 1.8vmax;
+  }
+}

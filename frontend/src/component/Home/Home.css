@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:ital@0;1&family=Rubik&display=swap');
+
+.txtContainer {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.txtContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#empty {
+    position: absolute;
+    background-color: tomato;
+    height: 20vmax;
+    top: 25%;
+    left: 60%;
+    border-radius: 5px 20% 10% 20%;
+    transition: all 0.5s;
+    animation: op 8s infinite forwards;
+}
+
+@keyframes op {
+    0% {
+
+        background-color: rgb(203, 137, 55);
+        transform: scale(1);
+        transform: translateY(10%);
+    }
+
+    50% {
+        background-color: rgb(185, 174, 31);
+        border-radius: 120px;
+        transform: translateY(0%);
+    }
+
+    75% {
+        border-radius: 360px;
+        background-color: rgb(84, 34, 87);
+        transition: 0.5s;
+    }
+
+    100% {
+        background-color: rgb(203, 137, 55);
+        transform: scale(1);
+        transform: translateY(10%);
+    }
+}
+
+#emptyImg {
+    position: relative;
+    top: -40%;
+    height: 35vmax;
+    width: 33vmax;
+    overflow: hidden;
+}
+
+.textContainerDiv1>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainerDiv1 h2 {
+    font-size: 3vmax;
+    color: whitesmoke;
+    margin-top: 2vmax;
+    text-align: center;
+}
+
+.shopping {
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3vmax;
+}
+
+.shopping::before {
+    content: "Shopping";
+    width: 100%;
+    color: chartreuse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 0.4rem solid chartreuse;
+    animation: textSlider 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes textSlider {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+.txtContainer h1 {
+    font-size: 5.5rem;
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 255, 255);
+    line-height: 130px;
+    animation: right-to-left 2s forwards;
+    text-align: center;
+    overflow: hidden;
+}
+
+.s2,
+.s4 {
+    color: yellow;
+}
+
+.txtContainer p {
+    font-size: 2.5rem;
+    font-weight: 900;
+    animation: left-to-right 2s forwards;
+    color: aqua;
+}
+
+#scrollBtn:hover {
+    box-shadow: 0px 0px 25px 5px rgba(153, 134, 60, 0.5);
+    background-color:rgb(226, 235, 221);
+    color: rgb(11, 5, 5);
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+
+#scrollA{
+    width: 25vmax;
+}
+#scrollBtn {
+    margin-bottom: 5vmax;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    border-radius: 0;
+    padding: 1vmax;
+    transition: all 0.5s;
+    width: 20vmax;
+    border-radius: 20%;
+    font: bold 1.5vmax "PT-serif";
+    margin-top: 5vmax;
+}
+
+@keyframes left-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.homeHeading {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5vmax;
+    border-bottom: 1px solid rgba(255, 249, 249, 0.5);
+    width: 35vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgba(255, 237, 237, 0.999);
+}
+
+.container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #232323;
+    border: 3px solid white;
+    border-radius: 40px 40px 60px 60px;
+}
+
+.productCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border: 0;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+
+}
+
+.productCard>img {
+    width: 12vmax;
+    padding-top: 10px;
+    transition: 0.5s ease;
+}
+
+.productCard>div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax;
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+}
+
+.productCardSpan>span {
+    font-size: 0.8vmax;
+    color: rgb(184, 255, 71);
+}
+
+.productCard>p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    color: rgb(255, 252, 245);
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.productCard>span {
+    margin: 0.8vmax;
+    color: rgb(234, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    margin-top: 1vmax;
+}
+
+.productCard:hover img {
+    transform: translate(-20px, -40px) rotate(-25deg) scale(1.1);
+}
+
+@media only screen and (max-width:830px) {
+    .txtContainer {
+        background-image: url('../../images/mobileViewImg/thyla-jane-MmeCrtYlIpE-unsplash.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: backg 15s infinite forwards;
+        animation-delay: 5s;
+    }
+    #scrollBtn{
+        width: 25vmax;
+        font-size: 1.5rem;
+    }
+
+    .textContainerDiv1 h2 {
+        color: whitesmoke;
+        font-size: 2.2rem;
+        animation: left-to-right 2s forwards;
+    }
+
+    .shopping {
+        font-size: 2.5rem;
+    }
+
+    .textContainerDiv2 {
+        display: none;
+    }
+
+    .txtContainer h1 {
+        font-size: 3.5rem;
+        line-height: 65px;
+        color: tomato;
+    }
+
+    .productCard>p {
+        font-size: 1.5vmax;
+    }
+
+    .productCard>div {
+        margin: 0vmax;
+        display: block;
+        text-align: center;
+    }
+
+    .productCard>span {
+        font-size: 1.5vmax;
+    }
+
+    .productCard>div>span {
+        margin: 0 0.5vmax;
+        font: 300 1.2vmax "Roboto";
+    }
+
+    .container {
+        border-radius: 2px 2px 2px 2px;
+    }
+
+    .productCardSpan>span {
+        font-size: 1.2vmax;
+    }
+
+    .productCard {
+        width: 16vmax;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    @keyframes backg {
+        0% {
+            background-image: url('../../images/mobileViewImg/thyla-jane-MmeCrtYlIpE-unsplash.jpg');
+        }
+
+        50% {
+            background-image: url('../../images/mobileViewImg/img1.avif');
+        }
+
+        100% {
+            background-image: url('../../images/mobileViewImg/thyla-jane-MmeCrtYlIpE-unsplash.jpg');
+        }
+    }
+
+}
+
+@media only screen and (max-width:1000px) {
+    .txtContainer h1 {
+        font-size: 4.5rem;
+    }
+}

@@ -1,0 +1,202 @@
+.emptyCart {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.emptyCart > svg {
+  font-size: 10vmax;
+  color: tomato;
+}
+.emptyCart > p {
+  font-size: 3vmax;
+  font-family: 'Lobster',cursive;
+  color: coral;
+  margin: 2vmax 0;
+  letter-spacing: 1vmax;
+}
+.emptyCart > a {
+  background-color: rgb(227, 249, 247);
+  color: coral;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font-family: 'Lobster',cursive;
+  font-size: 2vmax;
+  border-radius: 20px 0px 20px 0px;
+  text-decoration: none;
+  transition: all 0.5s;
+
+}
+.emptyCart > a:hover{
+  box-shadow: 0px 0px 25px 2px rgba(178, 212, 9, 0.68);
+  background-color: rgb(5, 18, 17);
+  color: white;
+ transform: scale(1.2);
+}
+.cartPage{
+  padding: 5vmax;
+}
+.cartHeader{
+  background-color: rgb(228, 245, 244);
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  color: black;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  font-size: 1vmax;
+  font-family: 'Lobster', cursive;
+  font-weight: 300;
+  border: 0;
+  border-radius: 0px 10px 0px 10px;
+}
+.cartHeader > p{
+  margin: 10px;
+}
+.cartHeader > p:last-child{
+  text-align: end;
+}
+.cartContainer{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  margin-bottom: 3vmax;
+}
+.cartInput{
+  display: flex;
+  align-items: center;
+  height: 8vmax;
+}
+.cartInput > button{
+  border: none;
+  background-color: darkgoldenrod;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s;
+  padding: 0.5vmax;
+}
+.cartInput > button:hover{
+  background-color: black;
+}
+.cartInput > input{
+  border: none;
+  width: 1vmax;
+  padding: 0.5vmax;
+  font-size: 0.8vmax;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  outline: none;
+}
+.cartSubtotal{
+  display: flex;
+  padding: 0.5vmax;
+  justify-content: flex-end;
+  color: antiquewhite;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: 'Aboreto', cursive;
+  font-weight: bold;
+  font-size: 1vmax;
+  height: 8vmax;
+}
+.cartGrossProfit{
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+.cartGrossProfitBox{
+  border-top: 3px solid rgb(243, 255, 137);
+  margin: 1vmax 4vmax;
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+  padding: 2vmax 0;
+  color: rgb(228, 245, 244);
+  font-family: 'Lobster', cursive;
+  font-size: 2vmax;
+}
+.checkOutBtn{
+  display: flex;
+  justify-content: flex-end;
+}
+.checkOutBtn > button{
+  background-color: rgb(223, 234, 220);
+  color: rgb(5, 18, 17);
+  border: 2px solid rgb(228, 245, 244);
+  cursor: pointer;
+  padding: 0.8vmax 4vmax;
+  border-radius: 2px 10px 2px 10px;
+  font-size: 1.2vmax;
+  font-weight: bold;
+  font-family:  'Lobster', cursive;
+  transition: all 0.2s;
+  width: 50%;
+  letter-spacing: 3px;
+  margin: 1vmax 4vmax;
+}
+.checkOutBtn > button:hover{
+  box-shadow: 0px 0px 25px 2px rgba(178, 212, 9, 0.68);
+  background-color: rgb(5, 18, 17);
+  color: white;
+ transform: scale(1.2);
+}
+.cartContainer{
+  border-top: 2px solid whitesmoke;
+  height: 12vmax;
+  border-bottom: 2px solid whitesmoke;
+  margin-top: 2vmax;
+}
+@media screen and (max-width:600px) {
+  .cartPage{
+    padding: 0;
+    min-height: 60vh;
+  }
+  .cartHeader{
+    width: 100%;
+    font-size: 1.7vmax;
+  }
+  .cartContainer{
+    width: 100%;
+    grid-template-columns: 3fr 1fr 1fr;
+    height: 20vmax;
+  }
+  .cartInput{
+    height: 20vmax;
+  }
+  .cartInput > button{
+    padding: 1.5vmax;
+  }
+  .cartInput > input{
+    width: 2vmax;
+    padding: 1.5vmax;
+    font-size: 1.8vmax;
+  }
+  .cartSubtotal{
+    padding: 1.5vmax;
+    height: 20vmax;
+    font-size: 2vmax;
+  }
+  .cartGrossProfit{
+    display: grid;
+    grid-template-columns: 0fr 2fr;
+    margin-top: 2vmax;
+  }
+  .cartGrossProfitBox{
+    padding: 1.5vmax;
+    font-size: 2vmax;
+  }
+  .checkOutBtn > button {
+    padding: 2vmax 4vmax;
+    font-size: 3vmax;
+    letter-spacing: 3px;
+    width: 100%;
+  }
+  .cartContainer{
+    margin-bottom: 0.1vmax;
+  }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Gluten:wght@200&family=Lobster&family=PT+Serif:ital@0;1&family=Playfair+Display:wght@400;500&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+body{
+  cursor: url("./images/cursorPNG.png") , auto;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.greenColor{
+  color: green !important;
+}
+.redColor{
+  color: red !important;
+}

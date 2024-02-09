@@ -1,0 +1,182 @@
+.updateProfileContainer {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url('https://t3.ftcdn.net/jpg/04/55/44/08/360_F_455440803_7JkZUyIj585rvN95ovezI7xExNGrDAEG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+  .updateProfileBox {
+    background: rgba(0, 0, 0, 0.400);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+    border: 0;
+    border-top-left-radius: 40px;
+    backdrop-filter: blur(15px);
+    width: 30vw;
+    height: 70vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: bottom-to-top 1.5s forwards;
+    border: 2px solid rgb(255, 163, 101);
+  }
+  .updateProfileForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 2vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    transition: all 0.5s;
+  }
+  .updateProfileForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+  }
+  .updateProfileForm > div > label{
+    position: absolute;
+    top:15px;
+    left: 45px;
+    font-family: 'Rubik',sans-serif;
+    color:#8DFF8D;
+    font-weight: bold;
+    transition: top 0.5s;
+    padding: 0 5px;
+    visibility: hidden;
+  }
+  .updateProfileForm > div > input:focus ~ label{
+    visibility: visible;
+    top: -16px;
+    background: #8DFF8D;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+    border: 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    padding: 0 1vmax;
+    color: rgb(1,29,29);
+  }
+  .updateProfileForm > div > input:focus::placeholder{
+    color: transparent;
+  }
+
+  .updateProfileForm > div > input {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    color: beige;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #8DFF8D;
+    border-radius: 4px;
+    background: transparent;
+    font: 300 1.2vmax cursive;
+    outline: none;
+  }
+
+  .updateProfileForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color:#8DFF8D;
+  }
+  
+  .updateProfileHeading{
+    color: aliceblue;
+    font: bold 1.5vmax "Playfair Display";
+    text-align: center;
+    padding: 1.3vmax;
+    border-bottom:1px solid white ;
+    width: 50%;
+    margin: auto;
+  }
+  
+  #updateProfileImage > img {
+    width: 3vmax;
+    border-radius: 100%;
+    margin-right: 1vmax;
+  }
+  #updateProfileImage > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #updateProfileImage > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 1vmax 'Rubik';
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #updateProfileImage > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .updateProfileBtn {
+    letter-spacing: 2px;
+    font-size: 2vmax;
+    font-family: "Rubik";
+    color: whitesmoke;
+    padding: 0.5vmax 3vmax;
+    box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.623);
+    background-color: tomato;
+    border: 0;
+    border-radius: 20px;
+    transition: all 0.5s;
+  }
+  .updateProfileBtn:hover {
+    background-color: rgba(0, 0, 0, 0.400);
+    box-shadow: 0px 0px 25px 2px rgba(215, 189, 189, 0.8);
+    letter-spacing: 2px;
+    color: #8DFF8D;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .updateProfileBox {
+      width: 70vw;
+      height: 55vh;
+    }
+    .updateProfileHeading{
+      font-size: 2.5vmax;
+    }
+    .updateProfileBtn{
+      width: 100%;
+    }
+    .updateProfileForm {
+      padding: 5vmax;
+    }
+    .updateProfileForm > div > input {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+    .signUpForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    #updateProfileImage > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #updateProfileImage > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  
+    .updateProfileBtn {
+      font: 300 1.9vmax "Roboto";
+      padding: 1.8vmax;
+    }
+  }
